@@ -30,8 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
   List list = [
     HomeHome(),
     FavoriteScreen(),
-    ChatScreen(),
     Posts(),
+    ChatScreen(),
     ProfileScreen(),
   ];
 
@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
             inactiveColor: Colors.black,
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.post_add_outlined,),
+            icon: Icon(Icons.radar_outlined,),
             title: Text('Post'),
             activeColor: kPrimaryColor,
             inactiveColor: Colors.black

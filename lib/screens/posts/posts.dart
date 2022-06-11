@@ -44,7 +44,7 @@ class _PostsState extends State<Posts> {
             style: TextStyle(fontWeight: FontWeight.bold),
             children: [
               TextSpan(
-                text: "Todos ",
+                text: "Rating ",
                 style: TextStyle(color: ksecondaryColor),
               ),
               // TextSpan(
@@ -122,7 +122,7 @@ class _PostsState extends State<Posts> {
           children: [
             Text(
               'Rating for our Resturant $rating',
-              style: TextStyle(fontSize: 30, color: kTextColor),
+              style: TextStyle(fontSize: 28, color: kTextColor),
             ),
             const SizedBox(
               height: 32,

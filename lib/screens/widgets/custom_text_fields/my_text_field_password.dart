@@ -23,7 +23,7 @@ class _MyTextFieldPassState extends State<MyTextFieldPass> {
   @override
   Widget build(BuildContext context) {
     final textFieldFocusNode = FocusNode();
-    bool _obscured = true;
+
 
     return TextFormField(
       keyboardType: TextInputType.visiblePassword,
@@ -35,27 +35,13 @@ class _MyTextFieldPassState extends State<MyTextFieldPass> {
           return null;
         }
       },
-      obscureText: _obscured,
+      obscureText: true,
       onChanged: widget.function,
       decoration: InputDecoration(
         hintText: widget.text,
         prefixIcon: Icon(
           widget.iconData,
           size: 22,
-        ),
-        suffixIcon: IconButton(
-          onPressed: () {
-            setState(() {
-              _obscured = !_obscured;
-            });
-          },
-          icon: _obscured
-              ? const Icon(
-                  Icons.visibility_off,
-                )
-              : const Icon(
-                  Icons.visibility,
-                ),
         ),
         enabledBorder: const UnderlineInputBorder(
           borderSide: BorderSide(color: Colors.grey),

@@ -22,7 +22,7 @@ class _SplashBodyState extends State<SplashBody> with SingleTickerProviderStateM
     animationController = AnimationController(
       vsync: this,
       duration: const Duration(
-        microseconds: 600,
+        milliseconds: 20
       ),
     );
 
@@ -41,13 +41,14 @@ class _SplashBodyState extends State<SplashBody> with SingleTickerProviderStateM
         children: [
           SvgPicture.asset(
             'assets/icons/macdonalds.svg',
-            height: 200,
-            width: 200,
+            height: 150,
+            width: 150,
+            color: Colors.white,
           ),
           const SizedBox(
             height: 20,
           ),
-          const Text(
+            Text(
             'A whole Food Resturants\n at your fingertips',
             textAlign: TextAlign.center,
             style: TextStyle(

@@ -11,6 +11,7 @@ import 'package:food_app_with_fb/screens/login/google_signin_provider.dart';
 import 'package:food_app_with_fb/screens/login/login_screen.dart';
 import 'package:food_app_with_fb/screens/profile/profile.dart';
 import 'package:food_app_with_fb/screens/splash_screen/splash_screen.dart';
+import 'package:food_app_with_fb/screens/widgets/custom_splash_screen/splash_body.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
     if (user != null) {
       return HomeScreen();
     } else {
-      return SignIn();
+      return SplashScreen();
     }
   }
 

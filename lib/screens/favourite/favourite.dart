@@ -256,7 +256,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
             style: TextStyle(fontWeight: FontWeight.bold),
             children: [
               TextSpan(
-                text: "Punk",
+                text: "Resturant ",
                 style: TextStyle(color: ksecondaryColor),
               ),
               TextSpan(
